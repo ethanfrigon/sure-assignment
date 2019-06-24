@@ -13,8 +13,9 @@ export class App extends React.Component {
       id="app"
       className="app"
       >
-        <Route exact path="/" component={LandingPage} />
-        <Route exact path="/hacker-news" component={HackerNews} />
+        <LandingPage />
+        {/* <Route exact path="/" component={LandingPage} />
+        <Route exact path="/hacker-news" component={HackerNews} /> */}
       </div>
   }
 }
@@ -40,4 +41,4 @@ export class App extends React.Component {
 //   );
 // }
 
-export default withRouter(connect(App));
+export default (App);

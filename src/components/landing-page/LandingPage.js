@@ -1,13 +1,22 @@
 import React from 'react';
+import './LandingPage.css';
+// import background from '.../images/blue-background.jpg';
 
 
 export class LandingPage extends React.Component {
   render(){
-    return <div className="BG">
-      <nav className="Blue Nav default sign up">
-
+    return <div className="App-Container">
+      <nav className="Blue-Nav-default-sign-up">
+      Foo
       </nav>
-      <div className="hero">
+      <div className="Hero">
+        <div className="Blue-BG">
+          {/* <img src="/images/blue-background.jpg" alt="blue-background"/> */}
+          <div className="Path-3-Copy-2"></div>
+          <div className="Path-3-Copy"></div>
+          <div className="Path-3"></div>
+          <button>Get Started</button>
+        </div>
 
       </div>
       <div className="Partners">
@@ -25,7 +34,12 @@ export class LandingPage extends React.Component {
       <footer className="Desktop Footer">
 
       </footer>
+      
+      <div className="BG">
+      </div>
 
-    </div>
+      </div>
   }
 }
+
+export default LandingPage
