@@ -13,8 +13,9 @@ export class App extends React.Component {
       id="app"
       className="app"
       >
-        <LandingPage />
-        {/* <Route exact path="/" component={LandingPage} />
+         <HackerNews />
+        {/* <LandingPage /> */
+        /* <Route exact path="/" component={LandingPage} />
         <Route exact path="/hacker-news" component={HackerNews} /> */}
       </div>
   }
@@ -41,4 +42,13 @@ export class App extends React.Component {
 //   );
 // }
 
-export default (App);
+
+const mapStateToProps = state => {
+  return {
+    // stories: state.stories,
+    // storyArray: state.storyArray,
+    state: state
+  }
+}
+
+export default (connect(mapStateToProps)(App));
