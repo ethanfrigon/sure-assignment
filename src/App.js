@@ -15,7 +15,6 @@ export class App extends React.Component {
       >
         <Route exact path="/" component={LandingPage} />
         <Route exact path="/hacker-news" component={HackerNews} />
-        <Route path="/" component={Footer} />
       </div>
   }
 }
