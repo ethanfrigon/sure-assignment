@@ -8,12 +8,14 @@ const initialState = {
 
 export default (state=initialState, action) => {
   if (action.type === FETCH_ALL_STORIES_SUCCESS) {
+    console.log(action)
     return Object.assign({}, state, {
-      storyArray: action.data
+      storyArray: action.storyArray
     })
   } else if (action.type === FETCH_INDIVIDUAL_STORY_SUCCESS) {
+    console.log(action);
     return Object.assign({}, state, {
-      stories: action.data
+      stories: action.stories
     } )
   }
   return state
