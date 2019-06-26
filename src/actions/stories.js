@@ -61,9 +61,11 @@ export const fetchStories = () => (dispatch) => {
     // .then(storyArray => console.log(storyArray))
     // .then(storyArray => dispatch(fetchAllStoriesSuccess(storyArray)))
     .then(storyArray => Promise.all(storyArray.map(storyId => fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`)))
-      .then(responses => Promise.all(responses.map(res => res.json()))))
-      .then(stories => dispatch(fetchIndividualStorySuccess(stories)))
+      .then(responses => {
+        // console.log(responses);
+        return Promise.all(responses.map(res => res.json()))}))
       // .then(res => console.log(res))
+      .then(stories => dispatch(fetchIndividualStorySuccess(stories)))
       // .then(res => res.json())
       // .then(stories => console.log(stories))
     // .then(storyArray => console.log(storyArray))
@@ -71,8 +73,12 @@ export const fetchStories = () => (dispatch) => {
 }
 
 export const fetchBookmarkedStories = (bookmarkArray) => (dispatch) => {
-   Promise.all(bookmarkArray.map(storyId => fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`))
-    .then(responses => Promise.all(responses.map(res => res.json()))))
+  console.log(bookmarkArray);
+  Promise.all(bookmarkArray.map(storyId => fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`)))
+    // .then(res => console.log(res))
+      .then(responses => {
+      console.log(responses);
+      return Promise.all(responses.map(res => res.json()))})
     .then(stories => dispatch(fetchIndividualBookmarkSuccess(stories)))
 }
 

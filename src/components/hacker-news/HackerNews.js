@@ -6,9 +6,11 @@ import {fetchStories, viewBookmarks, viewTopStories, fetchBookmarkedStories} fro
 
 export class HackerNews extends React.Component {
   componentDidMount(){
-    console.log(this.props.bookmarks)
+    // console.log(this.props.bookmarks)
     this.props.dispatch(fetchStories());
-    this.props.dispatch(fetchBookmarkedStories(this.props.bookmarks))
+    let bookmarkedIdArray = JSON.parse(localStorage.getItem("bookmarkList"));
+    console.log(bookmarkedIdArray);
+    this.props.dispatch(fetchBookmarkedStories(bookmarkedIdArray))
   }
 
   // storyArraySlice(){
@@ -24,19 +26,20 @@ export class HackerNews extends React.Component {
       let stories = this.props.stories.map(story => <Story key={story.id} {...story} /> );
       console.log(stories);
       return stories;
-    } else if (!this.props.topStories && this.props.bookmarks.length > 0) {
-      this.props.dispatch()
+    } 
+    else if (!this.props.topStories) {
       let stories = this.props.bookmarkedStories.map(story => <Story key={story.id} {...story} />);
       console.log(stories);
       return stories;
-    } else if (!this.props.topStories && this.props.bookmarks.length === 0){
-      let story = {
-        url: "N/A",
-        title: "Nothing bookmarked yet!",
-        score: 0,
-        by: "THE APP OVERLORDS"
-      }
-    }
+    } 
+    // else if (!this.props.topStories && this.props.bookmarks.length === 0){
+    //   let story = {
+    //     url: "N/A",
+    //     title: "Nothing bookmarked yet!",
+    //     score: 0,
+    //     by: "THE APP OVERLORDS"
+    //   }
+    // }
 
 
   }
@@ -46,7 +49,6 @@ export class HackerNews extends React.Component {
   }
 
   onClickBookmarks(){
-    console.log('in click')
     this.props.dispatch(viewBookmarks())
   }
 

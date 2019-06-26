@@ -3,10 +3,12 @@ import {connect} from 'react-redux';
 
 export class Story extends React.Component {
 
-  bookmarkStory(){
+  addBookmarkStory(){
     console.log(this.props.id);
     const bookmark = this.props.id;
-    const bookmarkList = this.props.bookmarks;
+    let bookmarkList = JSON.parse(localStorage.getItem("bookmarkList"));
+    // bookmarkList = JSON.parse(bookmarkList);
+    // console.log(bookmarkList);
     bookmarkList.push(bookmark);
     localStorage.setItem("bookmarkList", JSON.stringify(bookmarkList));
   }
