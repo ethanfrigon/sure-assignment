@@ -2,46 +2,25 @@ import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Story from './Story';
+import BookmarkedStory from './BookmarkedStory';
 import {fetchStories, viewBookmarks, viewTopStories, fetchBookmarkedStories} from '../../actions/stories'
 
 export class HackerNews extends React.Component {
   componentDidMount(){
-    // console.log(this.props.bookmarks)
     this.props.dispatch(fetchStories());
-    let bookmarkedIdArray = JSON.parse(localStorage.getItem("bookmarkList"));
-    console.log(bookmarkedIdArray);
-    this.props.dispatch(fetchBookmarkedStories(bookmarkedIdArray))
   }
 
-  // storyArraySlice(){
-  //   let slicedArray = this.props.storyArray.slice(0, 99);
-  //   console.log(slicedArray);
-  // }
-
   generateStories(){
-    // console.log(this.props.stories);
-    // console.log(this.props.stories.length);
-
     if(this.props.topStories && this.props.stories.length > 0){
       let stories = this.props.stories.map(story => <Story key={story.id} {...story} /> );
-      console.log(stories);
       return stories;
     } 
-    else if (!this.props.topStories) {
-      let stories = this.props.bookmarkedStories.map(story => <Story key={story.id} {...story} />);
-      console.log(stories);
+    else if (!this.props.topStories && JSON.parse(localStorage.getItem("bookmarkList"))) {
+      let stories = this.props.bookmarkedStories.map(story => <BookmarkedStory key={story.id} {...story} />);
       return stories;
+    } else {
+      return null
     } 
-    // else if (!this.props.topStories && this.props.bookmarks.length === 0){
-    //   let story = {
-    //     url: "N/A",
-    //     title: "Nothing bookmarked yet!",
-    //     score: 0,
-    //     by: "THE APP OVERLORDS"
-    //   }
-    // }
-
-
   }
 
   onClickTopStories(){
@@ -49,6 +28,10 @@ export class HackerNews extends React.Component {
   }
 
   onClickBookmarks(){
+    let bookmarkedIdArray = JSON.parse(localStorage.getItem("bookmarkList"));
+    if (bookmarkedIdArray){
+      this.props.dispatch(fetchBookmarkedStories(bookmarkedIdArray))
+    }
     this.props.dispatch(viewBookmarks())
   }
 
@@ -69,8 +52,6 @@ export class HackerNews extends React.Component {
 const mapStateToProps = state => {
   return {
     stories: state.stories.stories,
-    state: state,
-    bookmarks: state.stories.bookmarks,
     topStories: state.stories.topStories,
     bookmarkedStories: state.stories.bookmarkedStories
   }
