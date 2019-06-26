@@ -76,9 +76,7 @@ export const fetchBookmarkedStories = (bookmarkArray) => (dispatch) => {
   console.log(bookmarkArray);
   Promise.all(bookmarkArray.map(storyId => fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`)))
     // .then(res => console.log(res))
-      .then(responses => {
-      console.log(responses);
-      return Promise.all(responses.map(res => res.json()))})
+    .then(responses => Promise.all(responses.map(res => res.json())))
     .then(stories => dispatch(fetchIndividualBookmarkSuccess(stories)))
 }
 
