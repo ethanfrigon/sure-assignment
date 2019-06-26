@@ -2,11 +2,13 @@ import React from 'react';
 import {Route, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import Story from './Story';
-import {fetchStories} from '../../actions/stories'
+import {fetchStories, viewBookmarks, viewTopStories, fetchBookmarkedStories} from '../../actions/stories'
 
 export class HackerNews extends React.Component {
   componentDidMount(){
-    this.props.dispatch(fetchStories())
+    console.log(this.props.bookmarks)
+    this.props.dispatch(fetchStories());
+    this.props.dispatch(fetchBookmarkedStories(this.props.bookmarks))
   }
 
   // storyArraySlice(){
@@ -18,16 +20,43 @@ export class HackerNews extends React.Component {
     // console.log(this.props.stories);
     // console.log(this.props.stories.length);
 
-    if(this.props.stories.length > 0){
+    if(this.props.topStories && this.props.stories.length > 0){
       let stories = this.props.stories.map(story => <Story key={story.id} {...story} /> );
       console.log(stories);
       return stories;
+    } else if (!this.props.topStories && this.props.bookmarks.length > 0) {
+      this.props.dispatch()
+      let stories = this.props.bookmarkedStories.map(story => <Story key={story.id} {...story} />);
+      console.log(stories);
+      return stories;
+    } else if (!this.props.topStories && this.props.bookmarks.length === 0){
+      let story = {
+        url: "N/A",
+        title: "Nothing bookmarked yet!",
+        score: 0,
+        by: "THE APP OVERLORDS"
+      }
     }
+
+
+  }
+
+  onClickTopStories(){
+    this.props.dispatch(viewTopStories())
+  }
+
+  onClickBookmarks(){
+    console.log('in click')
+    this.props.dispatch(viewBookmarks())
   }
 
   render(){
     return <div>
-      <h1>Hacker News's Top Stories</h1>
+      <div className="header">
+        <h1>Hacker News</h1>
+        <span className="top-stories" onClick={()=>this.onClickTopStories()}>Top Stories</span>
+        <span className="my-bookmarks" onClick={()=>this.onClickBookmarks()}>My Bookmarks</span>
+      </div>
       <section className="article-list">
         {this.generateStories()}
       </section>
@@ -38,8 +67,10 @@ export class HackerNews extends React.Component {
 const mapStateToProps = state => {
   return {
     stories: state.stories.stories,
-    storyArray: state.storyArray,
-    state: state
+    state: state,
+    bookmarks: state.stories.bookmarks,
+    topStories: state.stories.topStories,
+    bookmarkedStories: state.stories.bookmarkedStories
   }
 }
 
