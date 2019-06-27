@@ -3,7 +3,6 @@ import {Route, withRouter} from 'react-router-dom';
 import {connect} from 'react-redux';
 import LandingPage from './components/landing-page/LandingPage';
 import HackerNews from './components/hacker-news/HackerNews';
-import Footer from './components/landing-page/Footer';
 import './App.css';
 
 export class App extends React.Component {

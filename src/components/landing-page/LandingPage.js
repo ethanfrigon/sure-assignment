@@ -11,17 +11,30 @@ export class LandingPage extends React.Component {
   render(){
     return <div className="App-Container">
       <nav className="Blue-Nav-default-sign-up">
-        <img className="logo S" src="/images/Fill 1.png" alt="s"></img>
-        <img className="logo U" src="/images/Fill 4 (U).png" alt="u"></img>
-        <img className="logo R" src="/images/Fill 6 (R).png" alt="r"></img>
-        <img className="logo E" src="/images/Fill 8 (E).png" alt="e"></img>
-        <img className="logo period" src="/images/Fill 10 (.).png" alt="."></img>
-        <span className="nav-item products">Products</span>
-        <span className="nav-item support">Support</span>
-        <span className="nav-item claims">Claims</span>
-        <span className="nav-item download-app">Download App</span>
-        <span className="nav-item login">Login</span>
-        <button className="sign-up-button">Sign Up</button>
+        <div className="logo-container-desktop">
+          <img className="logo S" src="/images/Fill 1.png" alt="s"></img>
+          <img className="logo U" src="/images/Fill 4 (U).png" alt="u"></img>
+          <img className="logo R" src="/images/Fill 6 (R).png" alt="r"></img>
+          <img className="logo E" src="/images/Fill 8 (E).png" alt="e"></img>
+          <img className="logo period" src="/images/Fill 10 (.).png" alt="."></img>
+        </div>
+        <div className="white-mobile-nav"></div>
+        <div className="logo-container-mobile">
+          <img className="logo-S" src="/images/Fill 1 (S) Blue Small.png" alt="s"></img>
+          <img className="logo-U" src="/images/Fill 4 (U) Blue Small.png" alt="u"></img>
+          <img className="logo-R" src="/images/Fill 6 (R) Blue Small.png" alt="r"></img>
+          <img className="logo-E" src="/images/Fill 8 (E) Blue Small.png" alt="e"></img>
+          <img className="logo-period" src="/images/Fill 10 (.) Blue Small.png" alt="."></img>
+          <img className="mobile-menu" src="/images/menu.png" alt="menu"></img>
+        </div>
+        <div className="nav-items">
+          <span className="nav-item products">Products</span>
+          <span className="nav-item support">Support</span>
+          <span className="nav-item claims">Claims</span>
+          <span className="nav-item download-app">Download App</span>
+          <span className="nav-item login">Login</span>
+          <button className="sign-up-button">Sign Up</button>
+        </div>
       </nav>
       <div className="Hero">
         <div className="Blue-BG">
@@ -41,7 +54,6 @@ export class LandingPage extends React.Component {
         <img className="nationwide" src="/images/nationwide.png" alt="nationwide logo"></img>
         <img className="qbe" src="/images/QBE.png" alt="qbe logo"></img>
         <img className="assurant" src="/images/assurant.png" alt="assurant logo"></img>
-        
       </div>
       <div className= "Choose Solutions">
         <span className="solutions">Choose the solution that's right for your business.</span>
@@ -64,6 +76,8 @@ export class LandingPage extends React.Component {
       </div>
       <div className="Coverage Options">
         <img className="lower-blue-bg" src="/images/lower-blue-background.png" alt="blue background"></img>
+        <div className="mobile-blue-bg"></div>
+        <div className="mobile-blue-bg2"></div>
         <span className="options-title">Our partners come in all shapes and sizes, just like our policies.</span>
         <div className="pet">
           <img className="pet-image coverage-image" src="/images/pet.png" alt="pet icon"></img>
@@ -110,6 +124,7 @@ export class LandingPage extends React.Component {
         </form>
       </div>
       <footer className="Desktop Footer">
+        <div className="mobile-footer-bg"></div>
         <div className="footer-logo">
           <img className="logo S logo-footer" src="/images/Fill 1 (S) Blue.png" alt="s"></img>
           <img className="logo U logo-footer" src="/images/Fill 4 (U) Blue.png" alt="u"></img>

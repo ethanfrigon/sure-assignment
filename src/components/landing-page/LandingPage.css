@@ -1,19 +1,9 @@
 .App-Container{
   position: relative;
-  width: 1440px;
+  /* width: 1440px; */
   height: 3728px;
   background: #FFFFFF;
 }
-
-/* .BG{
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: -12.98%;
-  bottom: -5.39%;
-
-  background: #FFFFFF;
-} */
 
 nav{
   left: 0%;
@@ -100,19 +90,6 @@ nav{
   right: 21.46%;
 }
 
-/* .button-container {
-  position: absolute;
-  left: 81.32%;
-  right: 10.35%;
-  top: 0.4%;
-  bottom: 98.55%
-} */
-
-/* .sign-up {
-  left: 83.61%;
-  right: 12.64%;
-} */
-
 .sign-up-button {
   position: absolute;
   left: 81.32%;
@@ -122,9 +99,7 @@ nav{
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
-
   height: 30px;
-
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
@@ -146,8 +121,6 @@ nav{
   right: -0.28%;
   top: -0.11%;
   bottom: 79.99%;
-  /* z-index: -1; */
-  /* background-image: url('/public/images/blue-background.jpg')  */
 }
 
 .title {
@@ -180,8 +153,6 @@ nav{
   font-weight: 300;
   font-size: 24px;
   line-height: 34px;
-  /* or 142% */
-
   text-align: center;
   letter-spacing: 1px;
 
@@ -218,41 +189,6 @@ nav{
   top: 11.29%;
   bottom: 76.29%;
 }
-
-/* .Path-3-Copy-2 {
-  position: absolute;
-  left: -0.15%;
-  right: -0.27%;
-  top: -0.11%;
-  bottom: 82.08%;
-
-  background: linear-gradient(180deg, rgba(1, 108, 183, 0.65) 0%, rgba(4, 153, 227, 0.65) 104.3%);
-}
-
-.Path-3-Copy {
-  position: absolute;
-  left: -0.14%;
-  right: -0.28%;
-  top: -0.11%;
-  bottom: 81.55%;
-
-  background: #039BE5;
-  mix-blend-mode: normal;
-  opacity: 0.23
-}
-
-.Path-3 {
-  position: absolute;
-  left: -0.14%;
-  right: -0.28%;
-  top: -0.11%;
-  bottom: 79.99%;
-
-  background: linear-gradient(180deg, #039BE5 10.64%, #039BE5 57.01%);
-  background-blend-mode: multiply;
-  mix-blend-mode: normal;
-  opacity: 0.24;
-} */
 
 .partner-background {
   position: absolute;
@@ -829,4 +765,831 @@ input[type="text"] {
   left: 88.47%;
   right: 10.42%;
   top: calc(50% - 14px/2 + 1775.2px);
+}
+
+@media screen and (min-width: 1000px) {
+  .logo-container-mobile, .white-mobile-nav, .mobile-blue-bg, .mobile-blue-bg2 {
+    display: none
+  }
+}
+
+@media screen and (max-width: 1000px) {
+
+  .App-Container {
+    height: 4573px;
+  }
+  .nav-items, .logo-container-desktop {
+    display: none
+  }
+
+  .mobile-menu {
+    position: absolute;
+    height: 24px;
+    left: 89.38%;
+    right: 3.12%;
+    top: calc(50% - 24px/2 - 2263.9px);
+    color: #039BE5;
+    z-index: 2;
+  }
+
+  .logo-container-mobile {
+    z-index: 3;
+  }
+
+  .logo-S{
+    position: absolute;
+    left: 3.12%;
+    right: 92.19%;
+    top: 0.33%;
+    bottom: 99.23%;
+    z-index: 1;
+  }
+
+  .logo-U {
+    position: absolute;
+    left: 8.75%;
+    right: 86.56%;
+    top: 0.33%;
+    bottom: 99.23%;
+    z-index: 1;
+  }
+
+  .logo-R {
+    position: absolute;
+    left: 14.69%;
+    right: 80.62%;
+    top: 0.33%;
+    bottom: 99.23%;
+    z-index: 1;
+  }
+
+  .logo-E {
+    position: absolute;
+    left: 20.31%;
+    right: 75.31%;
+    top: 0.33%;
+    bottom: 99.23%; 
+    z-index: 1;
+  }
+
+  .logo-period {
+    position: absolute;
+    left: 25.31%;
+    right: 73.12%;
+    top: 0.66%;
+    bottom: 99.23%;
+    z-index: 1;
+  }
+
+  .white-mobile-nav {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 98.91%;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  .title {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 1.68%;
+    bottom: 97.14%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 44px;
+    line-height: 54px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+  }
+
+  .subheader {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 3.11%;
+    bottom: 95.03%;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    letter-spacing: 0.1px;
+    color: #FFFFFF;
+  }
+
+  .get-started {
+    position: absolute;
+    left: 12.5%;
+    right: 12.19%;
+    top: 5.6%;
+    bottom: 93.22%;
+    background: #FF7043;
+    border-radius: 5px;
+  }
+
+  .example {
+    position: absolute;
+    left: 3.12%;
+    right: 5.31%;
+    top: 7.43%;
+    bottom: 88.96%;
+    width: 70%
+  }
+
+  .partner-background {
+    position: absolute;
+    left: -0.31%;
+    right: 0%;
+    top: 12.14%;
+    bottom: 80.14%;
+    
+    background: #F6F9FC;
+    border: 1px solid #F2F4F7;
+    box-sizing: border-box;
+  }
+
+  .chubb {
+    position: absolute;
+    left: 18.04%;
+    right: 17.76%;
+    top: 13.23%;
+    bottom: 86.31%;
+  }
+
+  .nationwide {
+    position: absolute;
+    left: 22.36%;
+    right: 22.36%;
+    top: 14.42%;
+    bottom: 84.43%;
+  }
+
+  .qbe {
+    position: absolute;
+    left: 34.17%;
+    right: 33.88%;
+    top: 16.3%;
+    bottom: 83.06%;
+  }
+
+  .assurant {
+    position: absolute;
+    left: 13.44%;
+    right: 13.44%;
+    top: 17.67%;
+    bottom: 81.26%;
+  }
+
+  .solutions {
+    position: absolute;
+    height: 172px;
+    left: -0.31%;
+    right: 1.88%;
+    top: calc(50% - 172px/2 - 1240.2px);    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 43px;
+    /* or 134% */
+    
+    text-align: center;
+    letter-spacing: 0.580645px;
+    
+  }
+
+  .lessgreater {
+    position: absolute;
+    height: 24px;
+    left: 38.12%;
+    right: 53.44%;
+    top: calc(50% - 24px/2 - 1114.5px);
+  }
+
+  .api-title {
+    position: absolute;
+    left: 49.69%;
+    right: 38.12%;
+    top: 25.37%;
+    bottom: 74.09%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93;
+  }
+
+  .api-content {
+    position: absolute;
+    left: -0.31%;
+    right: -0.31%;
+    top: 26.47%;
+    bottom: 70.91%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93;
+  }
+
+  .plug {
+    position: absolute;
+    height: 24px;
+    left: 32.19%;
+    right: 60%;
+    top: calc(50% - 24px/2 - 910.5px);
+  }
+
+  .iFrame-title {
+    position: absolute;
+    left: 43.75%;
+    right: 31.88%;
+    top: 29.83%;
+    bottom: 69.63%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93;
+    
+  }
+
+  .iFrame-content {
+    position: absolute;
+    left: -0.31%;
+    right: -0.31%;
+    top: 30.93%;
+    bottom: 66.45%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93;
+  }
+
+  .screen {
+    position: absolute;
+    height: 24px;
+    left: 23.12%;
+    right: 68.44%;
+    top: calc(50% - 24px/2 - 706.5px);
+  }
+
+  .white-label-title {
+    position: absolute;
+    left: 34.69%;
+    right: 23.44%;
+    top: 34.29%;
+    bottom: 65.17%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    /* identical to box height */
+    
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93;
+    
+  }
+
+  .white-label-content {
+    position: absolute;
+    left: -0.31%;
+    right: -0.31%;
+    top: 35.39%;
+    bottom: 61.99%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 32px;
+    /* or 200% */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+    
+    color: #6B7C93
+  }
+
+  .lower-blue-bg {
+    display: none
+  }
+
+  .mobile-blue-bg {
+    position: absolute;
+    left: -310%;
+    right: -42.81%;
+    top: 37.04%;
+    bottom: 21.17%;
+    background: #039BE5;
+    mix-blend-mode: normal;
+    opacity: 0.47;
+  }
+
+  .mobile-blue-bg2 {
+    position: absolute;
+    left: 142.81%;
+    right: -494.69%;
+    top: 37%;
+    bottom: 21.17%;
+    background: linear-gradient(180deg, #016CB7 10.64%, #039BE5 57.01%);
+    mix-blend-mode: normal;
+    opacity: 0.47;
+    transform: matrix(-1, 0, 0, 1, 0, 0); 
+  }
+
+  .options-title {
+    position: absolute;
+    height: 215px;
+    left: 10.94%;
+    right: 10.94%;
+    top: calc(50% - 215px/2 - 287.7px);
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 43px;
+    /* or 134% */
+    
+    text-align: center;
+    letter-spacing: 1px;
+    
+    color: #FFFFFF;
+  }
+
+  .pet-rectangle {
+    position: absolute;
+    left: 8.12%;
+    right: 8.12%;
+    top: 46.67%;
+    bottom: 47.69%;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.209352);
+    border-radius: 4px;
+  }
+
+  .pet-image {
+    left: 34.38%;
+    right: 34.38%;
+    top: 47.32%;
+    bottom: 50.49%;
+  }
+
+  .pet-title {
+    left: 22.19%;
+    right: 21.88%;
+    top: 49.95%;
+    bottom: 49.62%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.74px;    
+  }
+
+  .pet-content {
+    left: 8.44%;
+    right: 8.12%;
+    top: 50.6%;
+    bottom: 48.37%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center; 
+  }
+
+  .travel-rectangle {
+    left: 8.12%;
+    right: 8.12%;
+    top: 52.96%;
+    bottom: 41.4%;
+  }
+
+  .travel-image {
+    left: 34.38%;
+    right: 34.38%;
+    top: 53.62%;
+    bottom: 44.19%;
+  }
+
+  .travel-title {
+    left: 22.19%;
+    right: 21.88%;
+    top: 56.24%;
+    bottom: 43.32%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+  }
+
+  .travel-content {
+    left: 8.44%;
+    right: 8.12%;
+    top: 56.9%;
+    bottom: 42.08%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    
+    text-align: center;
+  }
+
+  .property-rectangle {
+    left: 8.12%;
+    right: 8.12%;
+    top: 59.26%;
+    bottom: 35.1%;
+  }
+
+  .property-image {
+    left: 34.38%;
+    right: 34.38%;
+    top: 59.92%;
+    bottom: 37.9%;
+  }
+
+  .property-title {
+    left: 22.19%;
+    right: 21.88%;
+    top: 62.54%;
+    bottom: 37.02%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+  }
+
+  .property-content {
+    left: 8.44%;
+    right: 8.12%;
+    top: 63.19%;
+    bottom: 35.78%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .catastrophic-rectangle {
+    left: 8.12%;
+    right: 8.12%;
+    top: 65.58%;
+    bottom: 28.56%;    
+  }
+
+  .catastrophic-image {
+    left: 34.38%;
+    right: 34.38%;
+    top: 66.24%;
+    bottom: 31.58%;
+  }
+
+  .catastrophic-title {
+    left: 21.93%;
+    right: 21.93%;
+    top: 68.86%;
+    bottom: 30.26%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.74px;
+  }
+
+  .catastrophic-content {
+    left: 8.12%;
+    right: 8.12%;
+    top: 69.93%;
+    bottom: 29.04%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    
+    text-align: center;
+  }
+
+  .home-rectangle {
+    left: 8.12%;
+    right: 8.12%;
+    top: 72.1%;
+    bottom: 22.26%;
+  }
+
+  .home-image {
+    left: 34.38%;
+    right: 34.38%;
+    top: 72.75%;
+    bottom: 25.06%;
+  }
+
+  .home-title {
+    left: 22.19%;
+    right: 21.88%;
+    top: 75.38%;
+    bottom: 24.19%;
+    
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    text-align: center;
+    letter-spacing: 0.74px;
+  }
+
+  .home-content {
+    left: 8.44%;
+    right: 8.12%;
+    top: 76.03%;
+    bottom: 22.94%;
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 21px;
+    /* or 131% */
+    
+    text-align: center;
+  }
+
+  .form-title {
+    left: 0%;
+    right: -0.31%;
+    top: 80.98%;
+    bottom: 17.16%;
+
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 43px;
+    /* or 134% */
+
+    text-align: center;
+  }
+
+  .form, .submit {
+    left: 8.12%;
+    right: 8.12%;
+  }
+
+  .first-name {
+    top: 83.21%;
+    bottom: 15.72%;
+  }
+
+  .last-name {
+    top: 84.5%;
+    bottom: 14.43%;
+  }
+
+  .company {
+    top: 85.79%;
+    bottom: 13.14%;    
+  }
+
+  .email {
+    top: 87.08%;
+    bottom: 11.85%;
+  }
+
+  .mobile-footer-bg {
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 90.86%;
+    bottom: 0.04%;
+
+    background: #FFFFFF;
+  }
+
+  .S.logo-footer {
+    left: 26.56%;
+    right: 64.06%;
+    top: 93.23%;
+    bottom: 7.41%;
+  }
+
+  .U.logo-footer {
+    left: 38.12%;
+    right: 52.5%;
+    top: 93.23%;
+    bottom: 7.41%  
+  }
+
+  .R.logo-footer {
+    left: 49.38%;
+    right: 40.94%;
+    top: 93.23%;
+    bottom: 7.41%;
+  }
+
+  .E.logo-footer {
+    left: 60.31%;
+    right: 31.25%;
+    top: 93.23%;
+    bottom: 7.41%;
+  }
+
+  .period.logo-footer {
+    left: 70.31%;
+    right: 26.56%;
+    top: 93.77%;
+    bottom: 7.41%;
+  }
+
+  .copyright {
+    height: 34px;
+    left: 28.44%;
+    right: 28.12%;
+    top: calc(51% - 34px/2 + 1994.5px);
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+  }
+
+  .privacy {
+    height: 20px;
+    left: 34.69%;
+    right: 34.69%;
+    top: calc(51% - 20px/2 + 2041.5px);
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;    
+  }
+
+  .tos {
+    height: 20px;
+    left: 32.19%;
+    right: 31.88%;
+    top: calc(51% - 20px/2 + 2080.5px);
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;  
+  }
+
+  .licenses {
+    position: absolute;
+    height: 20px;
+    left: 40%;
+    right: 41.25%;
+    top: calc(51% - 20px/2 + 2119.5px);
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;    
+  }
+
+  .help {
+    height: 20px;
+    left: 35.94%;
+    right: 37.19%;
+    top: calc(51% - 20px/2 + 2158.5px);
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;
+  }
+
+  .contact {
+    position: absolute;
+    height: 20px;
+    left: 37.81%;
+    right: 37.81%;
+    top: calc(51% - 20px/2 + 2197.5px);
+    
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    
+    text-align: center;
+  }
+
+  .product {
+    display: none
+  }
+
+  .twitter {
+    left: 30.62%;
+    right: 64.06%;
+    top: calc(51% - 14px/2 + 2229.7px)
+  }
+
+  .facebook {
+    left: 48.44%;
+    right: 48.12%;
+    top: calc(51% - 14px/2 + 2229.7px); 
+  }
+
+  .instagram {
+    left: 64.38%;
+    right: 30.62%;
+    top: calc(51% - 14px/2 + 2229.7px);
+
+  }
+
 }
