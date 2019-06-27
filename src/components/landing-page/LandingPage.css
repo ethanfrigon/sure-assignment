@@ -117,25 +117,25 @@ nav{
   position: absolute;
   left: 81.32%;
   right: 10.35%;
-  top: 0.4%;
+  top: calc(50% - 30px/2 - 1829px);
   bottom: 98.55%;
-
   border: 1px solid #FFFFFF;
   box-sizing: border-box;
   border-radius: 4px;
 
-  height: 20px;
+  height: 30px;
 
   font-family: Lato;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  /* identical to box height */
 
   text-align: center;
 
   color: #FFFFFF;
+  background: #039BE5;
+  z-index: 2;
 }
 
 
@@ -196,7 +196,8 @@ nav{
   bottom: 89.86%;
   background: #FF7043;
   border-radius: 5px;
-  box-shadow: 0px 2px 2px rgba(127, 32, 2, 0.475175);
+  /* box-shadow: 0px 2px 2px rgba(127, 32, 2, 0.475175); */
+  width: 300px;
 
   font-family: Lato;
   font-style: normal;
@@ -711,4 +712,121 @@ input[type="text"] {
   text-align: center;
   color: #FFFFFF;
   z-index: 3;
+}
+
+.logo-footer {
+  position: absolute;
+}
+
+.S.logo-footer {
+  left: 10.42%;
+  right: 87.5%;
+  top: 97.21%;
+  bottom: 1.74%;
+}
+
+.U.logo-footer {
+  left: 12.99%;
+  right: 84.93%;
+  top: 97.21%;
+  bottom: 1.74%;
+}
+
+.R.logo-footer {
+  left: 15.49%;
+  right: 82.36%;
+  top: 97.21%;
+  bottom: 1.74%;
+}
+
+.E.logo-footer {
+  left: 17.92%;
+  right: 80.21%;
+  top: 97.21%;
+  bottom: 1.74%;
+}
+
+.period.logo-footer {
+  left: 20.14%;
+  right: 79.17%;
+  top: 97.99%;
+  bottom: 1.74%;
+}
+
+.copyright {
+  position: absolute;
+  height: 34px;
+  left: 22.92%;
+  right: 67.43%;
+  top: calc(50% - 34px/2 + 1780px);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #6B7C93;
+}
+
+.footer-item {
+  position: absolute;
+  height: 20px;
+  top: calc(50% - 20px/2 + 1782px);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: right;
+  color: #039BE5;
+}
+
+.privacy {
+  left: 36.46%;
+  right: 56.74%;
+}
+
+.tos {
+  left: 44.65%;
+  right: 47.36%;
+}
+
+.licenses {
+  left: 54.03%;
+  right: 41.81%;
+}
+
+.product {
+  left: 59.58%;
+  right: 35.97%;
+}
+
+.help {
+  left: 65.42%;
+  right: 28.61%;
+}
+
+.contact {
+  left: 72.78%;
+  right: 21.81%;
+}
+
+.twitter {
+  position: absolute;
+  left: 80.97%;
+  right: 17.85%;
+  top: calc(50% - 14px/2 + 1775.2px);
+}
+
+.facebook {
+  position: absolute;
+  left: 84.93%;
+  right: 14.31%;
+  top: calc(50% - 14px/2 + 1775.2px);
+}
+
+.instagram {
+  position: absolute;
+  left: 88.47%;
+  right: 10.42%;
+  top: calc(50% - 14px/2 + 1775.2px);
 }

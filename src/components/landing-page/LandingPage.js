@@ -10,17 +10,14 @@ export class LandingPage extends React.Component {
         <img className="logo S" src="/images/Fill 1.png" alt="s"></img>
         <img className="logo U" src="/images/Fill 4 (U).png" alt="u"></img>
         <img className="logo R" src="/images/Fill 6 (R).png" alt="r"></img>
-        <img className="logo E" src="/images/Fill 8.png" alt="e"></img>
-        <img className="logo period" src="/images/Fill 10.png" alt="."></img>
+        <img className="logo E" src="/images/Fill 8 (E).png" alt="e"></img>
+        <img className="logo period" src="/images/Fill 10 (.).png" alt="."></img>
         <span className="nav-item products">Products</span>
         <span className="nav-item support">Support</span>
         <span className="nav-item claims">Claims</span>
         <span className="nav-item download-app">Download App</span>
         <span className="nav-item login">Login</span>
-        {/* <div className="button-container"> */}
-          {/* <span className="nav-item sign-up">Sign Up</span> */}
-          <button className="sign-up-button">Sign Up</button>
-        {/* </div> */}
+        <button className="sign-up-button">Sign Up</button>
       </nav>
       <div className="Hero">
         <div className="Blue-BG">
@@ -110,7 +107,27 @@ export class LandingPage extends React.Component {
         </form>
       </div>
       <footer className="Desktop Footer">
-
+        <div className="footer-logo">
+          <img className="logo S logo-footer" src="/images/Fill 1 (S) Blue.png" alt="s"></img>
+          <img className="logo U logo-footer" src="/images/Fill 4 (U) Blue.png" alt="u"></img>
+          <img className="logo R logo-footer" src="/images/Fill 6 (R) Blue.png" alt="r"></img>
+          <img className="logo E logo-footer" src="/images/Fill 8 (E) Blue.png" alt="e"></img>
+          <img className="logo period logo-footer" src="/images/Fill 10 (.) Blue.png" alt="."></img>
+        </div>
+        <span className="copyright">© 2017-2018 Sure Inc<br></br>All Rights Reserved</span>
+        <div className="footer-items">
+          <span className="footer-item privacy">Privacy Policy</span>
+          <span className="footer-item tos">Terms of Service</span>
+          <span className="footer-item licenses">Licenses</span>
+          <span className="footer-item product">Products</span>
+          <span className="footer-item help">Help Center</span>
+          <span className="footer-item contact">Contact Us</span>
+        </div>
+        <div className="social-links">
+          <img className="twitter" alt="twitter logo" src="/images/Twitter.png"></img>
+          <img className="facebook" alt="facebook logo" src="/images/Facebook.png"></img>
+          <img className="instagram" alt="instagram logo" src="/images/Instagram.png"></img>
+        </div>
       </footer>
       
       <div className="BG">
