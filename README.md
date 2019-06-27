@@ -2,7 +2,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Live Version
 
-A live version of this React app can be found hosted on Heroku here[https://sure-assignment.herokuapp.com/]
+A live version of this React app can be found hosted on Heroku at [https://sure-assignment.herokuapp.com/]
 
 See instructions below to clone the app and run locally.
 
