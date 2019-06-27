@@ -4,6 +4,7 @@ import {connect} from 'react-redux';
 import Story from './Story';
 import BookmarkedStory from './BookmarkedStory';
 import {fetchStories, viewBookmarks, viewTopStories, fetchBookmarkedStories} from '../../actions/stories'
+import './HackerNews.css'
 
 export class HackerNews extends React.Component {
   componentDidMount(){
@@ -36,11 +37,13 @@ export class HackerNews extends React.Component {
   }
 
   render(){
-    return <div>
+    return <div className="hacker-news-container">
       <div className="header">
         <h1>Hacker News</h1>
-        <span className="top-stories" onClick={()=>this.onClickTopStories()}>Top Stories</span>
-        <span className="my-bookmarks" onClick={()=>this.onClickBookmarks()}>My Bookmarks</span>
+        <div className="view-selector">
+          <span className="top-stories" onClick={()=>this.onClickTopStories()}>Top Stories</span>
+          <span className="my-bookmarks" onClick={()=>this.onClickBookmarks()}>My Bookmarks</span>
+        </div>
       </div>
       <section className="article-list">
         {this.generateStories()}

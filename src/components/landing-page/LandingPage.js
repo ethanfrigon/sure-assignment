@@ -1,9 +1,13 @@
 import React from 'react';
 import './LandingPage.css';
-// import background from '.../images/blue-background.jpg';
+import {connect} from 'react-redux';
 
 
 export class LandingPage extends React.Component {
+  sendToHackerNews(){
+    this.props.history.push(`/hacker-news`);
+  }
+
   render(){
     return <div className="App-Container">
       <nav className="Blue-Nav-default-sign-up">
@@ -25,11 +29,10 @@ export class LandingPage extends React.Component {
           <div className="Path-3-Copy-2"></div>
           <div className="Path-3-Copy"></div>
           <div className="Path-3"></div>
-          {/* <button>Get Started</button> */}
         </div>
         <span className="title">Sure + You.</span>
         <span className="subheader">Complement your core business and increase customer lifetime value with integrated offers from top-tier insurance carriers</span>
-        <button className="get-started">Get Started</button>
+        <button className="get-started" onClick={()=>this.sendToHackerNews()}>Get Started</button>
         <img className="example" src="/images/Example.png" alt="example"></img>
       </div>
       <div className="Partners">
@@ -129,12 +132,17 @@ export class LandingPage extends React.Component {
           <img className="instagram" alt="instagram logo" src="/images/Instagram.png"></img>
         </div>
       </footer>
-      
       <div className="BG">
       </div>
-
       </div>
   }
 }
 
-export default LandingPage
+const mapStateToProps = state => {
+  return {
+    landingPage: state.stories.landingPage
+  }
+}
+
+
+export default connect(mapStateToProps)(LandingPage);

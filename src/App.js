@@ -13,42 +13,17 @@ export class App extends React.Component {
       id="app"
       className="app"
       >
-         {/* <HackerNews /> */}
-        <LandingPage />
-        {/* /* <Route exact path="/" component={LandingPage} />
-        <Route exact path="/hacker-news" component={HackerNews} /> */}
+        <Route exact path="/" component={LandingPage} />
+        <Route exact path="/hacker-news" component={HackerNews} /> 
       </div>
   }
 }
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
-
-
 const mapStateToProps = state => {
   return {
-    // stories: state.stories,
-    // storyArray: state.storyArray,
+    landingPage: state.stories.landingPage,
     state: state
   }
 }
 
-export default (connect(mapStateToProps)(App));
+export default connect(mapStateToProps)(App);

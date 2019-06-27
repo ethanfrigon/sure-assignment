@@ -1,0 +1,51 @@
+.hacker-news-container {
+  /* background: #039BE5 */
+}
+
+.article-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center
+}
+
+
+h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px
+}
+
+.view-selector {
+  margin: 0 auto;
+  text-align: center
+}
+
+.top-stories {
+  margin-right: 15px
+}
+
+.my-bookmarks {
+  margin-left: 15px 
+}
+
+.story-container {
+  border: 1px #039BE5 solid;
+  border-radius: 8px;
+  padding: 25px;
+  margin: 10px;
+  max-width: 300px;
+  background: white;
+  text-align: center
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: darkgray;
+}
+
+.story-container span {
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+

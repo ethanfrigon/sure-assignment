@@ -50,6 +50,13 @@ export const fetchIndividualBookmarkSuccess = (stories) => {
   }
 }
 
+export const VIEW_HACKER_NEWS = 'VIEW_HACKER_NEWS';
+export const viewHackerNews = () => {
+  return {
+    type: 'VIEW_HACKER_NEWS'
+  }
+}
+
 export const fetchStories = () => (dispatch) => {
   dispatch(fetchAllStories());
   fetch(`https://hacker-news.firebaseio.com/v0/topstories.json?print=pretty`)
@@ -62,7 +69,6 @@ export const fetchStories = () => (dispatch) => {
 }
 
 export const fetchBookmarkedStories = (bookmarkArray) => (dispatch) => {
-  console.log(bookmarkArray);
   Promise.all(bookmarkArray.map(storyId => fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json?print=pretty`)))
     .then(responses => Promise.all(responses.map(res => res.json())))
     .then(stories => dispatch(fetchIndividualBookmarkSuccess(stories)))
