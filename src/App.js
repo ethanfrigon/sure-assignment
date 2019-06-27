@@ -13,9 +13,9 @@ export class App extends React.Component {
       id="app"
       className="app"
       >
-         <HackerNews />
-        {/* <LandingPage /> */
-        /* <Route exact path="/" component={LandingPage} />
+         {/* <HackerNews /> */}
+        <LandingPage />
+        {/* /* <Route exact path="/" component={LandingPage} />
         <Route exact path="/hacker-news" component={HackerNews} /> */}
       </div>
   }

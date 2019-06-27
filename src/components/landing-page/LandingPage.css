@@ -1,6 +1,6 @@
 .App-Container{
   position: relative;
-  /* width: 1440px; */
+  width: 1440px;
   height: 3728px;
   background: #FFFFFF;
 }
@@ -15,16 +15,142 @@
   background: #FFFFFF;
 } */
 
+nav{
+  left: 0%;
+  right: 0%;
+  top: 0%;
+  bottom: 98.15%;
+}
+
+.nav-item {
+  position: absolute;
+  height: 20px;
+  top: calc(50% - 20px/2 - 1829px);
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  z-index: 1;
+}
+
+.logo {
+  position: absolute;
+  z-index: 1;
+}
+
+.S {
+  left: 10.49%;
+  right: 87.43%;
+  top: 0.4%;
+  bottom: 98.55%;
+}
+
+.U {
+  left: 13.06%;
+  right: 84.86%;
+  top: 0.4%;
+  bottom: 98.55%;
+}
+
+.R {
+  left: 15.56%;
+  right: 82.29%;
+  top: 0.4%;
+  bottom: 98.55%;
+}
+
+.E {
+  left: 17.99%;
+  right: 80.14%;
+  top: 0.4%;
+  bottom: 98.55%;
+}
+
+.period {
+  left: 20.21%;
+  right: 79.1%;
+  top: 1.18%;
+  bottom: 98.55%;
+}
+
+.products {
+  left: 23.68%;
+  right: 71.88%;
+}
+
+.support {
+  left: 32.01%;
+  right: 64.03%;
+}
+
+.claims {
+  left: 38.75%;
+  right: 57.92%;
+}
+
+.download-app {
+  left: 65.9%;
+  right: 26.88%;
+}
+
+.login {
+  left: 75.9%;
+  right: 21.46%;
+}
+
+/* .button-container {
+  position: absolute;
+  left: 81.32%;
+  right: 10.35%;
+  top: 0.4%;
+  bottom: 98.55%
+} */
+
+/* .sign-up {
+  left: 83.61%;
+  right: 12.64%;
+} */
+
+.sign-up-button {
+  position: absolute;
+  left: 81.32%;
+  right: 10.35%;
+  top: 0.4%;
+  bottom: 98.55%;
+
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  height: 20px;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+
+
 .Blue-BG {
   position: absolute;
   left: -0.15%;
   right: -0.28%;
   top: -0.11%;
   bottom: 79.99%;
-  background-image: url('/public/images/blue-background.jpg') 
+  /* z-index: -1; */
+  /* background-image: url('/public/images/blue-background.jpg')  */
 }
 
-.Path-3-Copy-2 {
+/* .Path-3-Copy-2 {
   position: absolute;
   left: -0.15%;
   right: -0.27%;
@@ -57,4 +183,4 @@
   background-blend-mode: multiply;
   mix-blend-mode: normal;
   opacity: 0.24;
-}
+} */
