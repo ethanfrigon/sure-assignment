@@ -150,6 +150,74 @@ nav{
   /* background-image: url('/public/images/blue-background.jpg')  */
 }
 
+.title {
+  position: absolute;
+  left: 29.03%;
+  right: 29.31%;
+  top: 4%;
+  bottom: 94.55%;
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 50px;
+  line-height: 61px;
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #FFFFFF;
+}
+
+.subheader {
+  position: absolute;
+  left: 10.28%;
+  right: 10.56%;
+  top: 5.78%;
+  bottom: 92.04%;
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 34px;
+  /* or 142% */
+
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: #FFFFFF;
+}
+
+.get-started {
+  position: absolute;
+  left: 41.53%;
+  right: 41.74%;
+  top: 8.69%;
+  bottom: 89.86%;
+  background: #FF7043;
+  border-radius: 5px;
+  box-shadow: 0px 2px 2px rgba(127, 32, 2, 0.475175);
+
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+/* identical to box height */
+
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.example {
+  position: absolute;
+  left: 22.01%;
+  right: 21.67%;
+  top: 11.29%;
+  bottom: 76.29%;
+}
+
 /* .Path-3-Copy-2 {
   position: absolute;
   left: -0.15%;
@@ -184,3 +252,302 @@ nav{
   mix-blend-mode: normal;
   opacity: 0.24;
 } */
+
+.partner-background {
+  position: absolute;
+  left: 0%;
+  right: -0.83%;
+  top: 26.39%;
+  bottom: 69.31%;
+
+  background: #F6F9FC;
+  border: 1px solid #F2F4F7;
+  box-sizing: border-box;
+}
+
+.chubb {
+  position: absolute;
+  left: 11.81%;
+  right: 71.04%;
+  top: 28.22%;
+  bottom: 71.11%;
+}
+
+.nationwide {
+  position: absolute;
+  left: 34.31%;
+  right: 50.97%;
+  top: 27.71%;
+  bottom: 70.6%;
+}
+
+.qbe {
+  position: absolute;
+  left: 54.38%;
+  right: 36.67%;
+  top: 27.98%;
+  bottom: 70.84%;
+}
+
+.assurant {
+  position: absolute;
+  left: 68.68%;
+  right: 11.81%;
+  top: 27.76%;
+  bottom: 70.65%;
+}
+
+.solutions {
+  position: absolute;
+  height: 303px;
+  left: 17.01%;
+  right: 52.01%;
+  top: calc(50% - 303px/2 - 463.5px);
+
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 62px;
+  line-height: 76px;
+  letter-spacing: 1px;
+
+  color: #039BE5;
+}
+
+.solutions-image {
+  position: absolute;
+  height: 48px;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 1px;
+  color: #016CB7;
+}
+.solutions-title {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: 0.74px;
+  color: #6B7C93;
+}
+
+.solutions-content {
+  position: absolute;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+  letter-spacing: 0.74px;
+  color: #6B7C93;
+}
+
+.lessgreater {
+  left: 57.08%;
+  right: 39.24%;
+  top: calc(50% - 48px/2 - 591px);
+}
+
+.api-title {
+  left: 63.61%;
+  right: 23.96%;
+  top: 33.5%;
+  bottom: 65.69%;
+}
+
+.api-content {
+  left: 63.61%;
+  right: 14.51%;
+  top: 34.99%;
+  bottom: 61.79%;
+}
+
+.plug {
+  left: 57.08%;
+  right: 39.51%;
+  top: calc(50% - 48px/2 - 382px);
+}
+
+.iFrame-title {
+  left: 63.61%;
+  right: 23.96%;
+  top: 39.11%;
+  bottom: 60.09%;
+}
+
+.iFrame-content{
+  left: 63.61%;
+  right: 15.14%;
+  top: 40.6%;
+  bottom: 56.13%;
+}
+
+.screen {
+  left: 57.08%;
+  right: 39.24%;
+  top: calc(50% - 48px/2 - 171px);
+}
+
+.white-label-title {
+  left: 63.61%;
+  right: 23.96%;
+  top: 44.77%;
+  bottom: 54.43%;
+}
+
+.white-label-content {
+  left: 63.61%;
+  right: 14.51%;
+  top: 46.26%;
+  bottom: 50.98%;
+}
+
+.lower-blue-bg {
+  position: absolute;
+  left: -0.21%;
+  right: -0.42%;
+  top: 48.69%;
+  bottom: 19.69%;
+  /* z-index: -2; */
+}
+
+.options-title {
+  position: absolute;
+  height: 108px;
+  left: 15%;
+  right: 15.42%;
+  top: calc(50% - 108px/2 + 293.6px);
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 44px;
+  line-height: 54px;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+}
+
+.coverage-rectangle {
+  position: absolute;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.209352);
+  border-radius: 4px;
+  z-index: 0;
+}
+
+.coverage-image {
+  position: absolute;
+  z-index: 1;
+}
+
+.coverage-title {
+  position: absolute;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.74px;
+  color: #016CB7;
+  z-index: 1;
+}
+
+.coverage-content {
+  position: absolute;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #6B7C93;
+  z-index: 1
+}
+
+.pet-rectangle {
+  left: 17.08%;
+  right: 51.46%;
+  top: 61.19%;
+  bottom: 34.25%;
+}
+
+.pet-image {
+  left: 19.38%;
+  right: 73.68%;
+  top: 62.12%;
+  bottom: 35.19%;
+}
+
+.pet-title {
+  left: 28.4%;
+  right: 59.17%;
+  top: 62.42%;
+  bottom: 37.04%;
+}
+
+.pet-content {
+  left: 28.4%;
+  right: 53.06%;
+  top: 63.28%;
+  bottom: 35.46%;
+}
+
+.travel-rectangle {
+  left: 51.32%;
+  right: 17.22%;
+  top: 61.19%;
+  bottom: 34.25%;
+}
+
+.travel-image {
+  left: 53.68%;
+  right: 39.38%;
+  top: 62.12%;
+  bottom: 35.19%;
+}
+
+.travel-title {
+  left: 62.71%;
+  right: 24.86%;
+  top: 62.42%;
+  bottom: 37.04%;
+}
+
+.travel-content {
+  left: 62.71%;
+  right: 18.75%;
+  top: 63.28%;
+  bottom: 35.46%;
+}
+
+.property-rectangle {
+  left: 17.08%;
+  right: 51.46%;
+  top: 67.11%;
+  bottom: 28.33%;
+}
+
+.property-image {
+  left: 19.38%;
+  right: 73.68%;
+  top: 68.05%;
+  bottom: 29.27%;
+}
+
+.property-title {
+  left: 28.4%;
+  right: 59.17%;
+  top: 68.37%;
+  bottom: 31.09%;
+}
+
+.property-content {
+  left: 28.4%;
+  right: 53.06%;
+  top: 69.18%;
+  bottom: 29.56%;
+}
