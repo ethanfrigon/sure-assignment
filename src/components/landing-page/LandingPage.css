@@ -551,3 +551,164 @@ nav{
   top: 69.18%;
   bottom: 29.56%;
 }
+
+.catastrophic-rectangle {
+  left: 51.32%;
+  right: 17.22%;
+  top: 67.11%;
+  bottom: 28.33%;
+}
+
+.catastrophic-image {
+  left: 53.61%;
+  right: 39.44%;
+  top: 68.05%;
+  bottom: 29.27%;  
+}
+
+.catastrophic-title {
+  left: 62.64%;
+  right: 24.93%;
+  top: 68.13%;
+  bottom: 30.79%;
+}
+
+.catastrophic-content {
+  left: 62.64%;
+  right: 18.82%;
+  top: 69.44%;
+  bottom: 29.29%;
+}
+
+.home-rectangle {
+  left: 34.24%;
+  right: 34.31%;
+  top: 73.07%;
+  bottom: 22.37%;
+}
+
+.home-image {
+  left: 36.53%;
+  right: 56.53%;
+  top: 74.01%;
+  bottom: 23.31%;
+}
+
+.home-title {
+  left: 45.56%;
+  right: 41.97%;
+  top: 74.33%;
+  bottom: 25.13%;
+}
+
+.home-content {
+  left: 45.56%;
+  right: 35.83%;
+  top: 75.13%;
+  bottom: 23.61%;
+}
+
+.startup-background {
+  position: absolute;
+  left: -0.28%;
+  right: -0.28%;
+  top: 80.31%;
+  bottom: 4.16%;
+
+  mix-blend-mode: normal;
+  opacity: 0.35;
+  z-index: 1;
+}
+
+.background-shade {
+  position: absolute;
+  left: 0.07%;
+  right: -0.42%;
+  top: 80.31%;
+  bottom: 4.4%;
+
+  background: #6B7C93;
+  background-blend-mode: multiply;
+  mix-blend-mode: normal;
+  opacity: 0.84;
+  z-index: 0;
+}
+
+.form-title {
+  position: absolute;
+  left: 30.14%;
+  right: 30.35%;
+  top: 82.91%;
+  bottom: 16.15%;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+form {
+  z-index: 3;
+}
+
+.form {
+  position: absolute;
+  left: 32.01%;
+  right: 32.15%;  
+  background: #FFFFFF;
+  border: 1px solid #DADFE9;
+  box-sizing: border-box;
+  border-radius: 5px;
+  width: 516px;
+  z-index: 3;
+}
+
+input[type="text"] {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #9BA9BB;
+}
+
+.first-name {
+  top: 84.74%;
+  bottom: 13.95%; 
+}
+
+.last-name {
+  top: 86.32%;
+  bottom: 12.37%;
+}
+
+.company {
+  top: 87.9%;
+  bottom: 10.78%;
+}
+
+.email {
+  top: 89.48%;
+  bottom: 9.2%;
+}
+
+.submit {
+  position: absolute;
+  left: 32.01%;
+  right: 32.15%;
+  top: 91.34%;
+  bottom: 7.22%;
+  background: #FF7043;
+  border-radius: 5px;
+  width: 516px;
+  font-family: Lato;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #FFFFFF;
+  z-index: 3;
+}

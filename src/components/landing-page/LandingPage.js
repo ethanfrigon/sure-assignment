@@ -83,10 +83,31 @@ export class LandingPage extends React.Component {
           <span className="property-content coverage-content">Includes jewelry, collectibles, and smartphone policies</span>
           <div className="property-rectangle coverage-rectangle"></div>
         </div>
+        <div className="catastrophic">
+          <img className="catastrophic-image coverage-image" src="/images/catastrophic.png" alt="catastrophic icon"></img>
+          <span className="catastrophic-title coverage-title">Catastrophic Event Coverage</span>
+          <span className="catastrophic-content coverage-content">Includes weddings, and special events policies</span>
+          <div className="catastrophic-rectangle coverage-rectangle"></div>
+        </div>
+        <div className="home">
+          <img className="home-image coverage-image" src="/images/home.png" alt="home icon"></img>
+          <span className="home-title coverage-title">Home Coverage</span>
+          <span className="home-content coverage-content">Includes renters, evictions, and homeowners policies</span>
+          <div className="home-rectangle coverage-rectangle"></div>
+        </div>
 
       </div>
       <div className="Group 3">
-
+        <img className="startup-background" src="/images/startup-background.png" alt="office-background"></img>
+        <div className="background-shade"></div>
+        <form>
+          <span className="form-title">Contact our partnerships team today.</span>
+          <input className="form first-name" type="text" placeholder="First Name"></input>
+          <input className="form last-name" type="text" placeholder="Last Name"></input>
+          <input className="form company" type="text" placeholder="Company"></input>
+          <input className="form email" type="text" placeholder="Work Email"></input>
+          <input className="submit" type="submit"></input>
+        </form>
       </div>
       <footer className="Desktop Footer">
 
